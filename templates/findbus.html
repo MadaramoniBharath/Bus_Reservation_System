@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title >Bus Reservation System - Home</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'findbus.css'%}">
+    </head>
+<body>
+<div class="container">
+        <div class="row">
+            <div class="col-sm-6 mx-auto" style="margin-top: 70px">
+                <h2>Find bus</h2>
+                <form action="{% url 'findbus' %}" method="post" id="find-form">
+                    {% csrf_token %}
+                    <div class="form-group row">
+                        <label for="example-email-input" class="col-2 col-form-label">From</label>
+                        <div class="col-10">
+                            <input name='source' class="form-control" type="text" id="example-email-input">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-email-input" class="col-2 col-form-label">Destination</label>
+                        <div class="col-10">
+                            <input name='destination' class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-email-input" class="col-2 col-form-label" >Date</label>
+                        <div class="col-10">
+                            <input name='date' class="form-control" type="date">
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <button type="submit" class="btn btn-success float-right">Find bus</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <center><p>Please give feedback below <a href="Feedback_Form1.html">Feedback link</a></p></center>
+
+</body>
+</html>

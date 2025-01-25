@@ -1,0 +1,83 @@
+/*Global Styles*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+body{
+    background-image: url(buslogin.jpg);
+    background-size: cover;
+    height: 80vh;
+    background-position: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    margin: 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f44336;
+    border-radius: 5px;
+    background-color: #f8d7da;
+    color: #721c24;
+}

@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title >Bus Reservation System - Home</title>
+<link rel="stylesheet" type="text/css" href="{% static 'home.css'%}"> <!-- Link your CSS file here -->
+</head>
+<body>
+  
+
+<h1>Bus Reservation System</h1>
+
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="login_page.html">Login</a></li>
+        <li><a href="findbus.html">Find Bus</a></li>
+        <li><a href="orders.html">Your Orders</a></li>
+        {% if request.user.is_active %}
+        <a class="nav-item nav-link " href="{% url 'logout_page' %}" style="color: white;">Logout</a>
+        {% else %}
+        <li><a href="registration_page.html">Registration</a></li>
+        {% endif %}
+    </ul>
+</nav>
+<p>Welcome to the Bus Reservation System. Explore our services and book your bus tickets easily!</p>
+
+</body>
